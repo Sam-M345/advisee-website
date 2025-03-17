@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advisee.AI - AI-Powered Career Guidance</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1000px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 40px;
+        text-align: center;
+      }
+
+      .logo {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .logo img {
+        width: 160px;
+        height: 160px;
+        object-fit: contain;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 10px;
+      }
+
+      .brand-name {
+        font-size: 1.8rem;
+        color: #4a6cf7;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .tagline {
+        font-size: 1.2rem;
+        color: #666;
+        margin-bottom: 15px;
+      }
+
+      .description {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 15px;
+      }
+
+      .benefits {
+        text-align: left;
+        background-color: #f8f9ff;
+        border-radius: 10px;
+        padding: 15px 25px;
+        margin-bottom: 20px;
+        border-left: 3px solid #4a6cf7;
+      }
+
+      .benefits h3 {
+        color: #4a6cf7;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+      }
+
+      .benefits ul {
+        list-style: none;
+        margin-left: 5px;
+      }
+
+      .benefits li {
+        margin-bottom: 8px;
+        font-size: 1.1rem;
+        line-height: 1.5;
+        color: #555;
+      }
+
+      .benefits li::before {
+        content: "✅";
+        margin-right: 8px;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .btn-primary {
+        background-color: #4a6cf7;
+        color: white;
+        border: none;
+        padding: 20px 30px;
+      }
+
+      .btn-primary:hover {
+        background-color: #3a5bd9;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(74, 108, 247, 0.3);
+      }
+
+      .btn-secondary {
+        background-color: white;
+        color: #4a6cf7;
+        border: 2px solid #4a6cf7;
+        padding: 10px 30px;
+      }
+
+      .btn-secondary:hover {
+        background-color: #f8f9ff;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(74, 108, 247, 0.1);
+      }
+
+      .footer {
+        margin-top: 25px;
+        color: #888;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 30px 12px;
+        }
+
+        .logo img {
+          width: 120px;
+          height: 120px;
+        }
+
+        h1 {
+          font-size: 1.2rem;
+        }
+
+        .brand-name {
+          font-size: 1.5rem;
+        }
+
+        h2 {
+          font-size: 1rem;
+        }
+
+        .tagline {
+          font-size: 1rem;
+        }
+
+        .benefits {
+          padding: 12px 15px;
+        }
+
+        .benefits li {
+          font-size: 0.9rem;
+          line-height: 1.4;
+          margin-bottom: 6px;
+        }
+
+        .buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="images/advisee-logo.png" alt="Advisee.AI Logo" />
+      </div>
+      <h1 class="brand-name">Advisee.AI</h1>
+      <h2>
+        Stay ahead with AI news, insights, deep dives, and latest breakthroughs.
+      </h2>
+      <p class="tagline">Decode AI. Master the Future.</p>
+
+      <div class="buttons">
+        <a
+          href="https://advisee.substack.com/subscribe"
+          class="btn btn-primary"
+          target="_blank"
+          >Subscribe to our Newsletter</a
+        >
+      </div>
+
+      <div class="benefits">
+        <h3>Why Subscribe?</h3>
+        <ul>
+          <li>Stay ahead of AI trends and insights.</li>
+          <li>Understand complex AI concepts with clarity.</li>
+          <li>Avoid hype and focus on what's genuinely impactful. (Bash!)</li>
+          <li>
+            Implement AI effectively in real-world scenarios—for both personal
+            and professional use.
+          </li>
+          <li>Right now, it's FREE—so there's no reason not to subscribe!</li>
+        </ul>
+      </div>
+
+      <p class="description">
+        Advisee.AI delivers expert-driven insights into artificial intelligence,
+        combining deep analysis with practical applications to keep readers
+        informed on the latest AI advancements.
+      </p>
+
+      <div class="buttons">
+        <a
+          href="https://www.meetup.com/calbrain/"
+          class="btn btn-secondary"
+          target="_blank"
+          >Join our Meetup Group</a
+        >
+      </div>
+
+      <div class="footer">&copy; 2025 Advisee.AI. All rights reserved.</div>
+    </div>
+  </body>
+</html>
